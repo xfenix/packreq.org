@@ -13,5 +13,19 @@ class Language(models.Model):
 
 
 class PackageRequest(models.Model):
+    LEVEL_ELEMENTARY = 0
+    LEVEL_EASY = 1
+    LEVEL_MEDIUM = 2
+    LEVEL_HARD = 3
+    LEVEL_NIGHTMARE = 4
+    LEVELS = (
+        (LEVEL_ELEMENTARY, _('Elementary')),
+        (LEVEL_EASY, _('Easy')),
+        (LEVEL_MEDIUM, _('Medium')),
+        (LEVEL_HARD, _('Hard')),
+        (LEVEL_NIGHTMARE, _('Nightmare')),
+    )
     title = models.CharField(max_length=255, verbose_name=_('Title'))
     language = models.ForeignKey('Language', verbose_name=_('Language'), on_delete=models.PROTECT)
+    description = models.TextField(verbose_name=_('Description'))
+    level = models.IntegerField(choice=LEVELS, default=LEVEL_EASY)
