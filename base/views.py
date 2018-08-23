@@ -1,3 +1,6 @@
+from django.views.generic import TemplateView
 from django.shortcuts import render
 
-# Create your views here.
+
+class IndexPage(TemplateView):
+    template_name = 'pages/index.html'

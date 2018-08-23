@@ -1,5 +1,7 @@
 import os
 
+from django.utils.translation import gettext_lazy as _
+
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
@@ -14,6 +16,13 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 STATIC_URL = '/static/'
+
+
+LOCALE_PATHS = [os.path.join(PROJECT_DIR, 'locale'), ]
+LANGUAGES = [
+    ('ru', _('Russian')),
+    ('en', _('English')),
+]
 
 
 INSTALLED_APPS = [
