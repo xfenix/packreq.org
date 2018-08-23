@@ -28,4 +28,5 @@ class PackageRequest(models.Model):
     title = models.CharField(max_length=255, verbose_name=_('Title'))
     language = models.ForeignKey('Language', verbose_name=_('Language'), on_delete=models.PROTECT)
     description = models.TextField(verbose_name=_('Description'))
-    level = models.IntegerField(choice=LEVELS, default=LEVEL_EASY)
+    level = models.IntegerField(choices=LEVELS, default=LEVEL_EASY)
+    rating = models.DecimalField(verbose_name=_('Rating '), max_digits=12, decimal_places=2)
