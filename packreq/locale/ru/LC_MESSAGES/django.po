@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 23:31+0000\n"
+"POT-Creation-Date: 2018-09-07 09:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,56 +22,56 @@ msgstr ""
 
 #: base/models.py:6 base/models.py:28
 msgid "Title"
-msgstr ""
+msgstr "Заголовок"
 
 #: base/models.py:7
 msgid "Alias"
-msgstr ""
+msgstr "Псевдоним"
 
 #: base/models.py:11
 msgid "Programming language"
-msgstr ""
+msgstr "Язык программирования"
 
 #: base/models.py:12
 msgid "Programming languages"
-msgstr ""
+msgstr "Языки программирования"
 
 #: base/models.py:22
 msgid "Elementary"
-msgstr ""
+msgstr "Элементарно"
 
 #: base/models.py:23
 msgid "Easy"
-msgstr ""
+msgstr "Просто"
 
 #: base/models.py:24
 msgid "Medium"
-msgstr ""
+msgstr "Нормально"
 
 #: base/models.py:25
 msgid "Hard"
-msgstr ""
+msgstr "Тяжело"
 
 #: base/models.py:26
 msgid "Nightmare"
-msgstr ""
+msgstr "Кошмар"
 
 #: base/models.py:29
 msgid "Language"
-msgstr ""
+msgstr "Язык"
 
 #: base/models.py:30
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 #: base/models.py:32
 msgid "Rating "
-msgstr ""
+msgstr "Рейтинг"
 
 #: packreq/settings.py:23
 msgid "Russian"
-msgstr ""
+msgstr "Русский"
 
 #: packreq/settings.py:24
 msgid "English"
-msgstr ""
+msgstr "Английский"
