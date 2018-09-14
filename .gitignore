@@ -106,3 +106,4 @@ venv.bak/
 # My personal files
 uwsgi.ini
 logsock/
+packreq/collected_static/
