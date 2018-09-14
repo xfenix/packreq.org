@@ -6,4 +6,4 @@ from base.models import PackageRequest
 class PackageRequestForm(ModelForm):
     class Meta:
         model = PackageRequest
-        fields = '__all__'
+        fields = ('title', 'language', 'description', 'rating',)

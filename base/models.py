@@ -1,10 +1,24 @@
 from django.db import models
+from django.template.defaultfilters import slugify
 from django.utils.translation import gettext as _
 
 
 class Language(models.Model):
     title = models.CharField(max_length=255, verbose_name=_('Title'))
-    slug = models.SlugField(max_length=255, verbose_name=_('Alias'))
+    slug = models.SlugField(max_length=255, verbose_name=_('Alias'), unique=True, null=True, blank=True)
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(
+                self.title\
+                    .replace('+', '-plus')\
+                    .replace('#', '-sharp'))
+            if len(self.slug) < 3:
+                self.slug += 'lang'
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.title
 
     class Meta:
         ordering = ['-pk',]

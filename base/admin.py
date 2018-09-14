@@ -4,7 +4,8 @@ from base.models import Language, PackageRequest
 
 
 class LanguageAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'title', 'slug',)
+    list_display_links = list_display
 
 
 class PackageRequestAdmin(admin.ModelAdmin):
