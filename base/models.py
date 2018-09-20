@@ -9,10 +9,8 @@ class Language(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.slug:
-            self.slug = slugify(
-                self.title\
-                    .replace('+', '-plus')\
-                    .replace('#', '-sharp'))
+            self.slug = slugify(self.title\
+                .replace('+', '-plus').replace('#', '-sharp'))
             if len(self.slug) < 3:
                 self.slug += 'lang'
         super().save(*args, **kwargs)

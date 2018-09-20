@@ -10,6 +10,10 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
-    {% block content %}{% endblock %}
+    <div class="layout">
+        <div class="layout__content">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
 </body>
 </html>
