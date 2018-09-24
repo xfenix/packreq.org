@@ -104,7 +104,6 @@ venv.bak/
 .mypy_cache/
 
 # My personal files
-uwsgi.ini
 logsock/
 packreq/collected_static/
 node_modules/

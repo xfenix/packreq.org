@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  redis:
+    restart: always
+    image: redis:latest
+    expose:
+      - "6379"
+  web:
+    image: xfenix/packreq.org 
+    command: uwsgi --ini uwsgi.ini
+    volumes:
+      - /tmp/packreq.org/:/tmp/packreq.org/
+    depends_on:
+      - redis
