@@ -1,0 +1,14 @@
+.dockerignore
+.gitignore
+.jsbeautifyrc
+Dockerfile
+gulpfile.js
+LICENSE
+package-lock.json
+package.json
+Pipfile
+Pipfile.lock
+packreq/prestatic/
+uwsgi.template.ini
+*.md
+*.po
