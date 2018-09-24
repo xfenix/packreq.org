@@ -3,6 +3,9 @@ const fromDir = rootDir + 'prestatic/'
 const toDir = rootDir + 'static/'
 const gulp = require('gulp')
 const postcss = require('gulp-postcss')
+const autoprefixer = require('autoprefixer')
+const cssnext = require('cssnext')
+const precss = require('precss')
 
 
 gulp.task('css', function() {
