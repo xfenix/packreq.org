@@ -1,0 +1,25 @@
+{
+    "name": "packreq.org",
+    "version": "1.0.0",
+    "description": "packreq.org site",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xfenix/packreq.org.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/xfenix/packreq.org/issues"
+    },
+    "homepage": "https://github.com/xfenix/packreq.org#readme",
+    "dependencies": {
+        "autoprefixer": "^9.1.5",
+        "cssnext": "^1.8.4",
+        "postcss": "^7.0.2",
+        "precss": "^3.1.2"
+    }
+}

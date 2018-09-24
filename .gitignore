@@ -107,3 +107,4 @@ venv.bak/
 uwsgi.ini
 logsock/
 packreq/collected_static/
+node_modules/
