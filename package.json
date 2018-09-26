@@ -19,8 +19,10 @@
     "dependencies": {
         "autoprefixer": "^9.1.5",
         "cssnext": "^1.8.4",
-        "gulp": "^3.9.1",
+        "gulp": "^4.0.0",
+        "gulp-concat-css-import": "^1.0.5",
         "gulp-postcss": "^8.0.0",
+        "gulp-uglify": "^3.0.1",
         "postcss": "^7.0.2",
         "precss": "^3.1.2"
     }
