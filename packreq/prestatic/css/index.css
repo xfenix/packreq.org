@@ -4,14 +4,16 @@
 
 
 .layout-head {
-    
+    border: 1px solid #000;
 }
 
 .layout-body {
+    border: 1px solid red;
     
 }
 
 .layout-aside {
+    border: 1px solid green;
     
 }
 
