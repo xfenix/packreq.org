@@ -20,7 +20,7 @@ class SubmitView(AjaxableResponseMixin, CreateView):
 class SubmitThanksView(TemplateView):
     template_name = 'pages/thanks.html'
 
-    
+
 class LanguageView(ListView):
     template_name = 'pages/language.html'
     model = Language
