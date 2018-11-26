@@ -40,8 +40,6 @@ class PackageRequest(models.Model):
     title = models.CharField(max_length=255, verbose_name=_('Title'))
     language = models.ForeignKey('Language', verbose_name=_('Language'), on_delete=models.PROTECT)
     description = models.TextField(verbose_name=_('Description'))
-    maintainer = models.CharField(max_length=255, verbose_name=_('Maintainer'), blank=True, null=True)
-    repository = models.CharField(max_length=255, verbose_name=_('Repository URL'), blank=True, null=True)
     level = models.IntegerField(choices=LEVELS, default=LEVEL_EASY)
     rating = models.DecimalField(verbose_name=_('Rating '), max_digits=12, decimal_places=2)
 
@@ -49,3 +47,14 @@ class PackageRequest(models.Model):
         ordering = ['-pk',]
         verbose_name = _('Package request')
         verbose_name_plural = _('Package requests')
+
+
+class Maintainer(models.Model):
+    package_request = models.ForeignKey('PackageRequest', verbose_name=_('Parent'), on_delete=models.CASCADE)
+    repository = models.CharField(max_length=255, verbose_name=_('Repository URL'), blank=True, null=True)
+    user = models.CharField(max_length=255, verbose_name=_('User'), blank=True, null=True)
+
+    class Meta:
+        ordering = ['-pk',]
+        verbose_name = _('Maintainer')
+        verbose_name_plural = _('Maintainers')
