@@ -1,5 +1,5 @@
 # What it is?
-Just packreq.org site
+Site with list of desired software packages and ratings
 
 ## Deploy
 Docker image
