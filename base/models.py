@@ -53,6 +53,9 @@ class Maintainer(models.Model):
     package_request = models.ForeignKey('PackageRequest', verbose_name=_('Parent'), on_delete=models.CASCADE)
     repository = models.CharField(max_length=255, verbose_name=_('Repository URL'), blank=True, null=True)
     user = models.CharField(max_length=255, verbose_name=_('User'), blank=True, null=True)
+    
+    def build_absolute_url(self):
+        pass
 
     class Meta:
         ordering = ['-pk',]
